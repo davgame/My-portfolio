@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#212121">
+    <meta name="msapplication-TileColor" content="#131313">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerise.css">
+</head>
+<body class="preloader-active">
+    <div class="preloader" id="preloader">
+        <div class="imgpreload">
+            <img src="assets/PreloaderW.png" alt="" class="impeload">
+        </div>
+        <div class="loading">
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="header">
+        <div><img src="./assets/Ww.png" alt="" class="imglogo"></div>
+        <input type="checkbox" id="nav_check" hidden>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="#about" class="lang" key="about">About</a></li>
+                <li><a href="#experience" class="lang" key="experience">Experience</a></li>
+                <li><a href="#projects" class="lang" key="project">Project</a></li>
+                <li><a href="#contact" class="lang" key="contact">Contact</a></li>
+                <li class="header-item-lang-ru"><buttons id="ru" class="translate"><img src="assets/icons8-russian-federation.png" alt="" width="40px" height="40px"></buttons></li>
+                <li class="header-item-lang-en"><buttons id="en" class="translate"><img src="assets/icons8-great-britain.png" alt="" width="40px" height="40px"></buttons></li>
+            </ul>
+        </div>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile.png" alt="John Doe">
+        </div>
+        <div class="section__text">
+            <p class="lang" key="hello">Hello I,m</p>
+            <h1 class="title lang" key="name">David Shorvoglyan</h1>
+            <h3 class="section__text__p2"><span class="sec"></span></h3>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2 lang" key="cv"
+                onclick="window.open('./assets/Shorvoglyan_CV.pdf')">
+
+                    Download CV
+
+                </button>
+                <button 
+                class="btn btn-color-1 lang" key="inform" 
+                onclick="location.href='./#contact'">
+                
+                    Contact Info
+
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/icons8-instagram-512.png" 
+                    alt="My Instagram profile"
+                    class="icon" 
+                    onclick="location.href='https://instagram.com'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My github profile"
+                class="icon" 
+                onclick="location.href='https://github.com'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1 lang" key="uznat">Get To know</p>
+        <h1 class="title lang" key="about_me">About Me</h1>
+        <div class="container section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-pic.png" 
+                    alt="Profile picture" 
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                        />
+                        <h3 class="lang" key="exper">Experience</h3>
+                        <p class="lang" key="2year">2+ years </br class="lang" key="frontend"> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Education icon" 
+                            class="icon"
+                        />
+                        <h3 class="lang" key="education">Education</h3>
+                        <p class="lang" key="">B.Sc. Bachelors Degree</br> M.Sc. Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="lang" key="text">
+                        I graduated from the College with honors in the profession 
+                        of “Programmer Technician”; after successful completion of the College, 
+                        I entered the full-time department of the Kuban State Technological University with a degree in 
+                        “Software Engineering”, I am the author of research articles and patented software solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./assets/Slaider/BR.png" alt="">
+                <img src="./assets/Slaider/image-1240-PhotoRoom.png-PhotoRoom.png" alt="">
+                <img src="./assets/Slaider/image-1236-PhotoRoom.png-PhotoRoom.png" alt="">
+                <img src="./assets/Slaider/image-1238-PhotoRoom.png-PhotoRoom.png" alt="">
+                <img src="./assets/Slaider/image-1239-PhotoRoom.png-PhotoRoom.png" alt="">
+                <img src="./assets/Slaider/image-removebg-preview2.png" alt="">
+                <img src="./assets/Slaider/Logo_Voronka.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <p class="section__text__p1 lang" key="explore">Explore My</p>
+        <h1 class="title lang" key="experience">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title lang" key="front">
+                        Frontend Development
+                    </h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p class="lang" key="middle1">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p class="lang" key="middle2">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p class="lang" key="basice1">Basice</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Flutter</h3>
+                                <p class="lang" key="middle3">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p class="lang" key="middle4">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Tilda</h3>
+                                <p class="lang" key="Expert">Expert</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title lang" key="backend">
+                        Backend Development
+                    </h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p class="lang" key="middle5">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>MS-SQL</h3>
+                                <p class="lang" key="middle5">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p class="lang" key="middle6">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p class="lang" key="basice2">Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p class="lang" key="middle7">Middle</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Git Lub</h3>
+                                <p class="lang" key="middle8">Middle</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1 lang" key="brows">Browse My Recent</p>
+        <h1 class="title lang" key="project">Projects</h1>
+        <div class="experience-details-container">
+            <div class="container about-containerss">
+                <div class="details_container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/VR.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Fencing VR</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://tilda.cc/ru/'">
+                            Tilda
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn lang" key="demo" 
+                            onclick="location.href='https://fencingvr.top'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/Centre.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title lang" key="titl">Innovation Center</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://tilda.cc/ru/'">
+                            Tilda
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn lang" key="demo" 
+                            onclick="location.href='https://robokrasnodar.ru/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/Hack.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Hackathon 2023</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://dribbble.com/shots/23322837-Industry-Tracking-Hackathon-2023?utm_source=Clipboard_Shot&utm_campaign=Dava1212&utm_content=Industry%20Tracking%20Hackathon%202023&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Dava1212&utm_content=Industry%20Tracking%20Hackathon%202023&utm_medium=Social_Share'">
+                            Dribbble
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn lang" key="demo" 
+                            onclick="location.href='https://www.figma.com/proto/Aij6tPAcQYcF1HbGJzkpq5/WEB-CRM?page-id=0%3A1&type=design&node-id=220-270&viewport=-933%2C-4%2C0.13&t=2WaFLcfib0uZ60Yb-1&scaling=contain&starting-point-node-id=220%3A270&mode=design'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/Chik.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Web Chik-Chik</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/davgame/Web_Chik-Chik'">
+                            GitHub
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn lang" key="demo" 
+                            onclick="location.href='https://www.figma.com/proto/5r9jQUpNx3cMIxUSvsasAx/chik-chik-(Intensive)-(Copy)?page-id=0%3A1&type=design&node-id=1-6&viewport=480%2C169%2C0.08&t=b5fHwN91zZyhsT1n-1&scaling=scale-down-width&starting-point-node-id=1%3A6&mode=design'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/Poleteh.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">UX/UI University</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://dribbble.com/shots/23322778-UX-UI-mobile-Kuban-State-Technological-University'">
+                            Dribbble
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn lang" key="demo" 
+                            onclick="location.href='https://www.figma.com/proto/EA2XiUuD7teQYZksHB0Lot/%D0%A7%D0%B0%D1%82-%D1%81-%D0%94%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC-%D0%9A%D1%83%D0%B1%D0%93%D0%A2%D0%A3?page-id=0%3A1&node-id=832-16&starting-point-node-id=832%3A16&scaling=scale-down&mode=design&t=YF7gmtaKA0xSrdZP-1'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/WhatsApp.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">UX/UI WhatsApp</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://dribbble.com/shots/23322698-UX-UI-Redisign-WhatsApp-white-mode?utm_source=Clipboard_Shot&utm_campaign=Dava1212&utm_content=UX%2FUI%20Redisign%20WhatsApp%20white%20mode&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Dava1212&utm_content=UX%2FUI%20Redisign%20WhatsApp%20white%20mode&utm_medium=Social_Share'">
+                            Dribbble
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn lang" key="demo"  
+                            onclick="location.href='https://www.figma.com/proto/HLHhwO7Ytzhlawl4glFV0i/RW-White?page-id=0%3A1&type=design&node-id=126-42&viewport=790%2C448%2C0.09&t=fhwCbZj1Oxg79ODQ-1&scaling=scale-down&starting-point-node-id=126%3A42&mode=design'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load_more lang" key="continf"> 
+            Show more
+            <span class="load"><span></span></span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1 lang" key="touch">Get in Touch</p>
+        <h1 class="title lang" key="me">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email1.png"
+                    alt="mail icon" 
+                    class="icon contact-info"
+                />
+                <p><a href="mailto:davshorvoglyan@gmail.com">davshorvoglyan@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/instagram.png"
+                    alt="linkedin icon" 
+                    class="icon contact-info"
+                />
+                <p><a href="https://instagram.com">Instagram</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <dav class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about" class="active lang" key="about">About</a></li>
+                    <li><a href="#experience" class="lang" key="experience">Experience</a></li>
+                    <li><a href="#projects" class="lang" key="project">Project</a></li>
+                    <li><a href="#contact" class="lang" key="contact">Contact</a></li>
+                </ul>
+            </dav>
+        </nav>
+        <p>Coperight &#169; 2023 W-Astro. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--ScrollReveal-->
+    <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+    <!--JS Script-->
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
